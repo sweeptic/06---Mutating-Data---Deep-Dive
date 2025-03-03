@@ -7,8 +7,6 @@ import FormSubmit from './form-submit';
 export default function PostForm({ action }) {
   const [state, formAction] = useFormState(action, {});
 
-  console.log('state', state);
-
   const content_err = state?.errors?.includes('content is required');
   const title_err = state?.errors?.includes('title is required');
 
